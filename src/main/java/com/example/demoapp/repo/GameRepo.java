@@ -10,4 +10,6 @@ import java.util.Optional;
 public interface GameRepo extends JpaRepository<Game, Long> {
 
     Optional<Game> findByNameIs(String name);
+    Optional<Game> deleteByNameIs(String name);
+
 }
