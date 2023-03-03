@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    username: root
+    url: jdbc:postgresql://localhost:5432/game_store
+    driverClassName: org.postgresql.Driver
+    password: root
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+server:
+  port: 8087
